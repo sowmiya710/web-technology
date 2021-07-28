@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>PRODUCT INQUIRY DETAILS</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link href="form.css" rel="stylesheet" type="text/css">
+    </head>
+    <body>
+        <div>
+            <form> 
+                <fieldset id="cen">
+                    <legend><i>PRODUCT INQUIRY DETAILS</i></legend>
+                    <br><br>
+                <div>
+                    <label for="firstname">FIRSTNAME:</label>
+                    <input id="in" type="text" placeholder="enter first name" autofocus name="firstname" pattern="^[A-Za-z\s]{1,}[\.]{0,1}[A-Za-z\s]{0,}$" required>
+                </div>
+                <div>
+                    <label for="lastname">LASTNAME:</label>
+                    <input id="in" type="text" placeholder="enter last name" name="lastname"  pattern="^[A-Za-z\s]{1,}[\.]{0,1}[A-Za-z\s]{0,}$" >
+                </div>
+                <div>
+                    <label for="DOB">DOB:</label>
+                    <input id="in" type="date" placeholder="enterDOB" name="DOB" required>
+                </div>
+                <div>
+                    <label for="AGE">AGE:</label>
+                    <input id="in" type="number" placeholder="18-48" name="AGE" min="18" max="48" required>
+                </div>
+                <div>
+                    <label for="email">EMAIL:</label>
+                    <input id="in" type="email" placeholder="enterEMAIL" name="email" pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,3}$" required>
+                </div>
+                <div>
+                    <label for="mobile">MOBILE:</label>
+                    <input type="text" id="code" name="dailingcodes" value="+91" disabled >
+                    <input id="in" type="tel" placeholder="123-45-678" name="mobile" pattern="[0-9]{3}-[0-9]{2}-[0-9]{3}" required>
+                </div>
+                <div>
+                    <fieldset>
+                        <legend>ADDRESS:</legend>
+                    <textarea id="tarea" name="address" rows="5" cols="50" placeholder="enterADDRESS" required></textarea>
+                    </fieldset>
+                </div>
+                <div>
+                 <fieldset>
+                 <legend>CITY:</legend>
+                 <select name="city" id="city">
+                     <option value="erode" selected>erode</option>
+                     <option value="tirupur">tirupur</option>
+                     <option value="salem">salem</option>
+                     <option value="karur">karur</option>
+                     <option value="trichy">trichy</option>
+                     <option value="theni">theni</option>
+                     <option value="coimbatore">coimbatore</option>
+                     <option value="chennai">chennai</option>
+                 </select>
+                 </fieldset>
+                 </div>
+                <div>
+                   <fieldset>
+                   <legend>PINCODE:</legend> 
+                    <input id="in" type="text" placeholder="enterPIN" name="pincode" pattern="[0-9]{6}" required>
+                   </fieldset>
+                </div>
+                <div>
+                  <fieldset>
+                 <legend>PRODUCTS:</legend>
+                  <select name="products" id="products" multiple>
+                    <option value="jeans">jeans</option>
+                    <option value="T-shirt">T-shirt</option>
+                    <option value="saree">saree</option>
+                    <option value="kurta">kurta</option>
+                    <option value="jeggins">jeggins</option>
+                    <option value="palazoo">palazoo</option>
+                 </select>
+                 </fieldset>
+                 </div>
+                <div>
+                 <fieldset>
+                 <legend>PURCHASE MODE:</legend>
+                    <input type="radio" name="purchase mode" value="online">online
+                    <input type="radio" name="purchase mode" value="offline">offline
+                 </fieldset>
+                </div>
+                <fieldset>
+                 <legend>UPLOAD RECEIPT:</legend>
+                 <input type="file" name="myfile">
+                </fieldset>
+                <br>
+                <div>
+                    <button type="reset" id="re-set">reset</button>
+                    <button type="submit" id="submit">submit</button>
+                </div>
+                </fieldset>
+
+            </form>
+        </div>
+    </body>
+</html>

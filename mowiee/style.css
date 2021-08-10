@@ -1,3 +1,4 @@
+@media screen and (min-width: 480px) {
 #nav{
     display:inline-block;
      height:50px;
@@ -72,4 +73,5 @@ footer{
     font-size:14px;
     text-align: center;
     margin-top:50px;
+}
 }

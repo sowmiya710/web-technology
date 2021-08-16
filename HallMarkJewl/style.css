@@ -33,7 +33,7 @@ a{
 
 
 .box{
-    background-image: url(image/mainBanner.webp);
+    background-image: url(mainBanner.webp);
     position:relative;
     background-position: center;
     background-repeat: no-repeat;

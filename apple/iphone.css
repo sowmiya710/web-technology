@@ -1,0 +1,26 @@
+.b1{
+    background-image: url(color.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 800px;
+    width: 100%;
+    margin-top:50px;
+}
+.b2{
+    text-align: center;
+    margin-left: -1000px;
+    margin-top: -30px;
+}
+a{
+    text-decoration: none;
+    color: black;
+}
+.b3{
+    text-align: center;
+}
+#unique{
+    margin-bottom: 40px;
+}
+.u-line{
+    border-bottom: 2px solid gainsboro;
+}

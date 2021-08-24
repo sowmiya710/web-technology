@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <!-- css -->
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+
+        <!-- fontawesome -->
+           <link rel="stylesheet" href="css/all.css">
+
+         <!--  b icons -->
+         <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.5.0/font/bootstrap-icons.css">
+     
+         <!-- user style -->
+         <link rel="stylesheet" href="style.css">
+         <style>
+             section{
+                 margin-left:550px;
+                 margin-top:100px;
+             }
+             .card-body{
+                 background-color: black;
+                 color: white;
+                 border-radius: 24px;
+             }
+             a{
+                 text-decoration: none;
+                 color:white;
+             }
+             a:hover{
+                 color:rgb(241, 229, 229);
+             }
+         </style>
+    <title>Apple SignUp</title>
+</head>
+<body>
+    <header>
+ 
+    <nav class="navbar fixed-top navbar-expand-lg navbar-dark bg-dark ">
+        <div class="container">
+        <a href="index.html" class="navbar-brand">
+            <img src="applelogo.png" height="40px" width="55px" alt="logo">
+        </a> 
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                  <li class="nav-item">
+                      <a   class="nav-link" href="mac.html"> 
+                            Mac
+                       </a>
+                   </li>
+                  <li class="nav-item ">
+                      <a  class="nav-link" href="iphone.html">
+                          iphone
+                       </a>
+                   </li>
+                  <li class="nav-item ">
+                      <a  class="nav-link " href="ipad.html">
+                          ipad
+                       </a>
+                   </li>
+                  <li class="nav-item">
+                      <a  class="nav-link"  href="music.html">
+                          Music
+                       </a>
+                   </li>
+                </li>
+                   <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                        Support <span class="caret"></span> 
+                    </a>
+                    <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                      <li><a class="dropdown-item" href="https://www.youtube.com/applesupport"><i class="bi bi-youtube"></i> Youtube</a></li>
+                      <li><hr class="dropdown-divider"></li>
+                      <li><a class="dropdown-item" href="https://twitter.com/AppleSupport"><i class="bi bi-twitter"></i> Twitter</a></li>
+                    </ul>
+                  </li>
+                  <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="#" id="Dropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                   <i class="fas fa-user"></i><span class="caret"></span> 
+                    </a>
+                    <ul class="dropdown-menu" aria-labelledby="Dropdown">
+                      <li><a class="dropdown-item" href="SignIn.html"><i class="fas fa-sign-in-alt"></i>  SignIn</a></li>
+                      <li><hr class="dropdown-divider"></li>
+                      <li><a class="dropdown-item" href="SignUp.html"><i class="fas fa-user-plus"></i> SignUp</a></li>
+                    </ul>
+                  </li>
+           </ul>
+           <form class="d-flex">
+            <input class="form-control " type="search" placeholder="Search" aria-label="Search">
+            <button class="btn btn-dark" type="submit"><i class="bi bi-search"></i></button>
+          </form>
+       </div> 
+   </div>
+    </nav>
+</header>
+<!-- body -->
+<br>
+<section>
+<div class="container m-5">
+    <div class="row">
+        <div class="col-md-6">
+<div class="card" style="width: 18rem;">
+    <div class="card-body text-center">
+      <h5 class="card-title">SignUp</h5>
+      <br>
+      <form class="text-center">
+          <div class="form-group">
+              <label for="FirstName">FirstName</label>
+              <input type="text" name="FirstName" class="form-control" aria-placeholder="Enter FirstName">
+          </div>
+          <br>
+          <div class="form-group">
+            <label for="LastName">LastName</label>
+            <input type="text" name="LastName" class="form-control" aria-placeholder="Enter LastName">
+        </div>
+        <br>
+        <div class="form-group">
+            <label for="Email">Email</label>
+            <input type="email" name="Email" class="form-control" aria-placeholder="Enter Email">
+        </div>
+        <br>
+          <div class="form-group">
+            <label for="Password">Password</label>
+            <input type="password" name="Password" class="form-control" aria-placeholder="Enter Password">
+        </div>
+        <br>
+        <button type="submit" class="btn btn-danger btn-md">
+            Submit
+        </button>
+      </form>
+      <br>
+      <p class="card-text">Already have an Account?</p>
+      <a href="SignIn.html" class="card-link">SignIn</a>
+    </div>
+  </div>
+</div>
+</div>
+</div>
+</section>
+   <!-- java script -->
+ <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script> 
+</body>
+</html>

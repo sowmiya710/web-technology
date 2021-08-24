@@ -1,0 +1,90 @@
+.navbar-brand{
+    margin-left: 90px;
+}
+.nav-item{
+    margin-left: 20px;;
+    margin-right: 70px;
+}
+.carousel-inner{
+    margin-top: 70px;
+}
+.nav-item:hover{
+    border-bottom: 2px groove white ;
+    font-size: 110%;
+
+}
+.dropdown-item:hover{
+    border: 2px outset grey ;
+    font-size: 110%;
+    color: gray;
+}
+
+ .lay {
+     margin-top: 20px;
+    position: relative;
+    width: 100%;
+  } 
+  
+  .image {
+    display: block;
+    width: 100%;
+    height: 95vh;
+  }
+  
+  .overlay {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background-color:whitesmoke;
+    overflow: hidden;
+    width: 0;
+    height: 95vh;
+    transition: .5s ease;
+  }
+  
+  .container:hover .overlay {
+    width: 100%;
+    border:3px solid rgb(27, 26, 26);
+  }
+  
+  .text {
+    color: gray;
+    font-size: 40px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    -webkit-transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+    white-space: nowrap;
+  }
+  .text:hover{
+      background-color:rgb(253, 246, 246);
+      color:black;
+      text-shadow: rgb(155, 52, 52);
+      border: 4px dotted rgb(201, 110, 110);
+      padding: 40px;
+  }
+  .btn-sml {
+    padding: 10px 10px;
+    font-size: 30px;
+    border-radius: 8px;
+   margin-left:70px;
+   margin-top: 10px;
+}
+footer{
+    background-color: rgb(245, 238, 238);
+    margin:20px;
+    border: 2px solid rgb(245, 238, 238);
+    padding:20px;
+}
+.ul:hover{
+ text-decoration:underline;
+ color:indigo;
+}
+pre{
+    font-size: larger;
+ margin:30px;
+}
+}

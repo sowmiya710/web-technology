@@ -1,0 +1,243 @@
+<html>
+    <head>
+        <title>
+            EB BILL CALCULATOR
+        </title>
+        <!-- link to Bootstrap minified css-->
+		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+		<!-- link to Jquery minified-->
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+		<!-- link to Bootstrap JS -->
+		<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+		<!-- link to fontawesome CSS-->
+		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+        <style>
+            body{
+                
+                background-image:url("t3.jpg");
+                background-repeat: no-repeat;
+                background-attachment: fixed;
+                background-position: center;
+            }
+            #demo{
+                border: 2px solid black;
+                background-color:white ;
+                width:200px;
+                height:30px;
+            }
+            #u{
+                border: 2px solid black;
+                background-color:white ;
+                width:200px;
+                height:30px;  
+            }
+            #output{
+                border: 2px solid black;
+                background-color:white ;
+                width:200px;
+                height:30px;  
+            }
+            #type{
+                border: 2px solid black;
+                background-color:white ;
+                width:200px;
+                height:30px;  
+            }
+            
+            
+        </style>
+    </head>
+    <script type="text/javascript">
+    function calculate()
+    {
+        var getValue = document.getElementById('type').selectedOptions[0].value;
+        var unit=parseInt(document.getElementById('u').value);
+          if(getValue=="dom")
+          {
+          if(unit>=0&&unit<=100)
+          {
+              var total=0;
+          }  
+          else if(unit>100&&unit<=200)
+          {
+              var total=(unit-100)*1.5+20;
+          }  
+          else if(unit>200 && unit<=500)
+          {
+              var total=200+(unit-200)*3+30;
+          }  
+          else 
+          {
+              var total=100*3.5+300*4.6+(unit-500)*6.6+50;
+          } 
+        
+          document.getElementById("demo").innerHTML=total;
+        }
+        if(getValue=="com")
+        {        
+            var total=0;
+            var sub=document.getElementById('output').selectedOptions[0].value;
+         
+          if(sub==="III-A(2)")
+          {
+            if(unit<=750)
+          {
+              var total=0;
+          }  
+          else if(unit>750&&unit<=1000)
+          {
+              var total=unit*2.3;
+          }  
+          else if(unit>1000 && unit<=1500)
+          {
+              var total=1000*2.3+(unit-1000)*2.3;
+          }  
+          else 
+          {
+              var total=1000*2.3+500*3.45+(unit-1500);
+          } 
+          
+        }
+        if(sub=="I-C")
+        {
+            total=unit*4.60;
+        }
+        if(sub=="II-A")
+        {
+            total=unit*6.35;
+        }
+        if(sub=="II-B(1)")
+        {
+            total=unit*5.75;
+        }
+        if(sub=="II-B(2)")
+        {
+            total=unit*7.50;
+        }
+        if(sub=="II-C")
+        {
+            if(unit>0 && unit<=120)
+            {
+                total=unit*2.85;
+            }
+            else{
+                total=120*2.85+(unit-120)*5.75;
+            }
+        }
+        if(sub=="III-A(1)")
+        {
+            if(unit>0 && unit<=500)
+            {
+                total=unit*4.0;
+            }
+            else{
+                total=500*4.0+(unit-120)*4.60;
+            }
+        }
+        if(sub=="III-B")
+        {
+            total=unit*6.35;
+        }
+        if(sub=="IV")
+        {
+             total=unit*3.22;
+        }
+        if(sub=="V")
+        {
+            if(unit>0 && unit<=100)
+            {
+                total=unit*5.0;
+            }
+            else{
+                total=100*5.0+(unit-100)*8.05;
+            }
+        }
+        if(sub=="VI")
+        {
+            total=unit*12;
+        }
+        document.getElementById("demo").innerHTML=total;
+    }
+    }
+    function get()
+    {
+        var getValue=document.getElementById('type').selectedOptions[0].value;
+        if(getValue==="com")
+        {
+        var a=["I-C","II-A","II-B(1)","II-B(2)","II-C","III-A(1)","III-A(2)","III-B","IV","V","VI"];
+            var string="";
+             
+             for(i=0;i<a.length;i++)
+             {
+                 string=string+"<option value="+a[i]+">"+a[i]+"</option>";
+             }
+            
+        }
+        else
+        {
+           var string=""; 
+        }
+        document.getElementById("output").innerHTML=string;
+    }
+   </script>
+    <body  >
+       <div class="container-fluid">
+           <div style="background-color:black; color:white; text-align: center; "><h1>EB BILL CALCULATOR</h1></div>
+           <div class="col-md-4"></div>
+           <div class="col-md-4" >
+        <form style="padding-top: 200px;">
+            
+            <table class="table table-hover ">
+                <tr>
+                    <th>
+                        TYPE
+                    </th>
+                    <td>
+                        <select name="type" id="type"  onchange="get()">
+                            <option value="dom">DOMESTIC</option>
+                            <option value="com">COMMERCIAL</option>
+                        </select> 
+                    </td>
+                </tr>
+                <tr>
+                    <th>
+                        SUB - DIVISION
+                    </th>
+                    <td>
+                        <select id="output" ></select>
+                    </td>
+                </tr>
+                <tr>
+                    <th>
+                        UNIT
+                    </th>
+                    <td>
+                        <input type="number"id="u"></input> 
+                    </td>
+                </tr>
+                <tr>
+                    <th>
+                       BILL AMOUNT
+                    </th>
+                    <td>
+                        <div id="demo"></div>
+                    </td>
+                </tr>
+                <tr>
+                    <th>
+
+                    </th>
+                    <td>
+                        <input type="button" class="btn btn-info" value="CALCULATE" onclick="calculate()"></input> 
+                    </td>
+                </tr>
+                
+            </table>
+      
+        </form>
+    </div>
+    </div>
+
+   
+    </body>
+</html>

@@ -1,0 +1,40 @@
+.navbar-brand
+{
+    margin-left: 60px;
+}
+.nav-item
+{
+    margin-left: 190px;
+}
+footer{
+    background-color: #FFD8E2;
+    margin:20px;
+    border: 2px solid rgb(245, 238, 238);
+    padding:20px;
+}
+.ul:hover{
+ text-decoration:underline;
+ color:indigo;
+}
+pre{
+    font-size: larger;
+ margin:30px;
+}
+#row{
+   
+   margin-top:100px;
+   border:1px solid black;
+   border-radius: 12px;
+   background-color: pink;
+   
+}
+.mb-3{
+    margin-left: 100px;
+    margin-bottom: 50px;
+}
+button{
+    margin-left: 100px;
+}
+.body{
+    background-color:#FFD8E2 ;
+}

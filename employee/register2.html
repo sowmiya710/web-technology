@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JERO</title>
+    <link rel = "shortcut icon" href="image/logo.png">
+    <!-- Latest compiled and minified CSS -->
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+
+<!-- Optional theme -->
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap-theme.min.css" integrity="sha384-rHyoN1iRsVXV4nD0JutlnGaslCJuC7uwjduW9SVrLvRYooPp2bWYgmgJQIXwl/Sp" crossorigin="anonymous">
+
+<!-- Latest compiled and minified JavaScript -->
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+
+<style>
+    body{
+        background-image: url("image/bg.jpg");
+      background-repeat: no-repeat;
+      background-position:center;
+    }
+    .container{
+      margin-top:50px;  
+      margin-bottom:50px;  
+      padding:30px;
+      border:2px solid whitesmoke;
+      background-color:rgb(0,0,0,0.4);
+      color:rgb(255, 255, 255);
+    }
+    #branch{
+        color:black;
+    }
+</style>
+</head>
+<body>
+    <div class="container">
+        <div class="row">
+            <div class="col-xs-3 col-xs-offset-5">
+    <form action="http://localhost:8080" method="POST" >
+      
+        <div class="form-group">
+        <label for="name">Name</label>
+        <input type="text" class="form-control" id="name" name="name">
+        
+    </div>
+
+        <div class="form-group">
+        <label for="emp_id">Employee ID</label>
+        <input type="number" class="form-control" id="emp_id" name="emp_id">
+        </div>
+  
+
+
+        <div class="form-group">
+            <label for="Organization">Organization</label>
+            <input type="text" class="form-control" id="Organization" name="Organization">
+            </div>
+        
+            
+
+               
+  
+
+
+                        <div class="form-group">
+                            <label for="exp">Experiance</label>
+                            <input type="number" class="form-control" placeholder="in years" id="exp" name="exp">
+                            </div>
+   
+
+
+                        <div class="form-group">
+                            <label for="email">Email</label>
+                            <input type="email" class="form-control" id="email" name="email">
+                            </div>
+   
+                            <div class="form-group">
+                                <label for="mobile">mobile</label>
+                                <input type="number" class="form-control" id="mobile" name="mobile">
+                                </div>
+
+                                <div class="form-group">
+                                    <label for="gender">Gender</label>
+                                    <input type="radio" id="male" name="gender" value="male">Male
+                                    <input type="radio" id="female" name="gender" value="female">Female
+                                    <input type="radio" id="others" name="gender" value="others">Others
+                                    </div>
+                   
+                
+                
+                
+                                    <div class="form-group">
+                                        
+                                        <label for="branch">Branch</label>
+                
+                <select name="branch" id="branch">
+                    <option value="md">  Managing  Director </option>
+                    <option value="manager">Manager</option>
+                  <option value="developer">Developer</option>
+                  <option value="tester">Tester</option>
+                  <option value="team leader">Team Leader</option>
+                  
+                </select>
+                                        </div>
+
+                                          
+    
+
+                            
+
+
+
+        <button type="submit" class="btn btn-success">Submit</button>
+        </form>
+    </div>
+    </div>
+    </div>
+</body>
+</html>
